@@ -1,0 +1,18 @@
+
+A = load("data_2.txt")
+
+plot(A(:, 1), A(:,2), A(:,1), A(:,3))
+xlabel('time (sec)')
+ylabel('magnitude (meter)')
+grid("on")
+legend("First date set", "Second data set")
+
+% statistical operations
+
+maximum = max(A(:,2))
+minimum = min(A(:,2))
+mean_val = mean(A(:,2))
+standard_deviation = std(A(:,2))
+median_val = median(A(:,2))
+mode_val = mode(A(:,2))
+num_points = length(A(:,2))
