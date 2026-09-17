@@ -1,0 +1,12 @@
+A = load('data.txt')
+XXX = length(A);
+YYY = 0;
+
+for i = 1:XXX
+    if A(i) > 2
+        YYY = YYY + 1
+    end
+end
+
+disp(['The number of elements is: ', num2str(XXX)])
+disp(['The number of elements is: ', num2str(YYY)])
