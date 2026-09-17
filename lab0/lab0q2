@@ -1,0 +1,9 @@
+x = input('Enter the value of x: ')
+i = 0
+sum = 0
+while abs(sum - exp(x)) >= 1e-6
+    sum = sum + (x^i / factorial(i))
+    i = i+1
+end
+
+disp(['For x=', num2str(x), ', e^', num2str(x), ' = ', num2str(sum)])
